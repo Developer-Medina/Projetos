@@ -369,6 +369,10 @@ section {
   color: var(--offwhite);
 }
 
+.mention {
+  content: '⛓';
+}
+
 .section-image {
   display: flex;
   justify-content: center;
