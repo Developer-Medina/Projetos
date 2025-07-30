@@ -20,6 +20,10 @@
 
   --blob-blur: 248px;
 
+  /* === Header e Nav ===*/
+
+  --menu-blur: 32px;
+
   /* === FX ===*/
 
 
@@ -73,8 +77,8 @@ body {
 .blob {
   position: absolute;
   border-radius: 50%;
-  filter: blur(var(--blob-blur));
-  -webkit-backdrop-filter: blur(--blob-blur);
+  filter: blur(var(--blob-blur)); /*Porque é no elemento*/
+  -webkit-filter: blur(--blob-blur); /*Porque é no elemento*/
   will-change: transform;
 }
 
@@ -153,17 +157,59 @@ body {
 }
 
 
+/*=== Header e Nav ===*/
+
 header {
+  margin: 2rem auto;
+}
+
+.nav-extra {
+
 
 }
 
 nav {
+  margin: auto;
+  width: 10rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  margin: auto;
+
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: var(--menu-blur); /*Porque é atrás do elemento*/
+  -webkit-backdrop-filter: blur(var(--menu-blur)); /*Porque é atrás do elemento*/
+
+  border-radius: 4rem;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2), 
+    inset 4px 4px 4px rgba(255, 255, 255, 0.05), 
+    inset -4px -4px 4px rgba(0, 0, 0, 0.05);
 
 }
 
-#i-logo {
-
+.menu-icon, .menu-item {
+  color: var(--pure-white);
 }
+
+.menu-icon {
+  padding: 0.5rem;
+}
+
+.menu-item {
+  display: none;
+}
+
+nav > a{
+  background-color: aquamarine;
+  padding: 0.5rem;
+}
+
 
 a {
   color: var(--pure-white);
