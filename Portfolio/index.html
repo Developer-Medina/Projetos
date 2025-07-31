@@ -48,243 +48,281 @@
 
     <main>
 
-        <h1 class="title">Portfolio - Medina</h1>
+        <section class="main-container">
+            <div class="card-grid" id="card-1">
+                <div class="card-title">
+                    <span class="material-symbols-outlined card-icon">home</span>
+                    <h2>Home</h2>
+                </div>
+                <div class="main-pic">
+                    <img src="_assets/profile_pic.png" alt="Imagem de um jovem sob fundo de natureza" id="img-1">
+                </div>
+                <h3 id="main-sub">Prazer, sou o Medina!</h3>
+                <p class="single-p">Desenvolvedor com visão de produto, atenção ao detalhe e paixão por sistemas bem pensados.</p>
+                <a href="#card-2" class="p-button">Full Stack em formação - Mackenzie</a>
+            </div>
 
-        <div class="main-grid">
-            <section class="card" id="home">
-                    <div class="card-title">
-                        <span class="material-symbols-outlined">home</span>
-                        <h2>Home</h2>
-                    </div>
-                    <div class="main-pic">
-                        <img src="_assets/profile_pic.png" alt="Imagem de um jovem sob fundo de natureza">
-                    </div>
-                    <h3>Prazer, sou o Medina!</h3>
-                    <p>Desenvolvedor com visão de produto, atenção ao detalhe e paixão por sistemas bem pensados.</p>
-                    <p class="p-button">Full Stack em formação - Mackenzie</p>
-            </section>
-            <section class="card">
-                <span class="material-symbols-outlined">account_circle</span>
-                <h2>About me</h2>
-                <p>Ser um desenvolvedor é mais do que saber programar - é saber onde procurar, como transformar dúvidas ou ideias em soluções e como adaptar cada código ao meu próprio estilo.</p>
-                <img src="_assets/vyse_pic.png" alt="Vyse, agente do jogo Valorant.">
+            <div class="card-grid" id="card-2">
+                <div class="card-title">
+                    <span class="material-symbols-outlined card-icon">account_circle</span>
+                    <h2>About me</h2>
+                </div>
+                <p class="sec-p">Ser um desenvolvedor é mais do que saber programar - é saber onde procurar, como transformar dúvidas ou ideias em soluções e como adaptar cada código ao meu próprio estilo.</p>
+                <img src="_assets/vyse_pic.png" alt="Vyse, agente do jogo Valorant." id="img-2">
                 <blockquote>"Todo o arsenal é meu."</blockquote>
-                <p>— Vyse, Valorant.</p>
-                <p>E de fato, é: meu único limite sou eu mesmo e, ao reconhecer isso, me mantenho preparado para o próximo desafio.</p>
-                <p>Sou apaixonado por aprender, experimentar coisas novas e estar à frente do que ainda está surgindo - mas não se engane porque, por trás dessa personalidade que anseia por novidade, há também o prazer por lugares e pessoas que me são familiares e, claro, simples prazeres do dia a dia (como ouvir música!).</p>
-                <p class="p-button">Conheça meu arsenal</p>
-                <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </section>
-        </div>
+                <p class="vyse-mention">— Vyse, Valorant.</p>
+                <p>E de fato, é. Meu único limite sou eu mesmo e, ao reconhecer isso, me mantenho preparado para o próximo desafio.</p>
+                <p>Estudo na Universidade Presbiteriana Mackenzie, atualmente no 3º semestre de Análise e Desenvolvimento de Sistemas. Me dedico muito ao meu curso e, de forma mais auto didata, estudo linguagens e frameworks mais específicos.</p>
+                <p class="p-last">Sou apaixonado por aprender, experimentar coisas novas e estar à frente do que ainda está surgindo - mas não se engane porque, por trás dessa personalidade que anseia por novidade, há também o prazer por lugares e pessoas que me são familiares e, claro, simples prazeres do dia a dia (como ouvir música).</p>
+
+                <div class="p-button">
+                    <a href="#hard-skills">Conheça meu arsenal</a>
+                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                </div>
+            </div>
+        </section>
 
         <section class="card" id="hard-skills">
-            <span class="material-symbols-outlined">code</span>
-            <h2>Hard skills</h2>
-
-            <div class="programl">
-                <h3>Linguagens</h3>
-                <div class="skill">
-                    <p class="skill-name">Java</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="java"></div>
-                    </div>
-                <span class="material-symbols-outlined">autorenew</span>
-                </div>
-                <div class="skill">
-                    <p class="skill-name">HTML & CSS</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="html"></div>
-                    </div>
-                    <span class="material-symbols-outlined">autorenew</span>
-                </div>
-                <div class="skill">
-                    <p class="skill-name">SQL</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="sql"></div>
-                    </div>
-                    <span class="material-symbols-outlined">autorenew</span>
-                </div>
-                <div class="skill">
-                    <p class="skill-name">JavaScript</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="js"></div>
-                    </div>
-                    <span class="material-symbols-outlined">autorenew</span>
-                </div>
-                <div class="skill">
-                    <p class="skill-name">Python</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="py"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <p class="skill-name">C#</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="c"></div>
-                    </div>
-                </div>
+            <div class="card-title">
+                <span class="material-symbols-outlined card-icon">code</span>
+                <h2>Hard skills</h2>
             </div>
 
-            <div class="frameworks">
+            <div class="skills-container">
 
-                <h3>Frameworks</h3>
-
-                <div class="skill">
-                    <p class="skill-name">Spring</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="spring"></div>
+                <div class="skills-category">
+                    <h3>Linguagens</h3>
+                    <div class="skill-item">
+                        <span>Java</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 70%;"></div></div>
+                            <span class="material-symbols-outlined learning" title="Em aprendizado">autorenew</span>
+                        </div>
                     </div>
-                    <span class="material-symbols-outlined">autorenew</span>
+                    <div class="skill-item">
+                        <span>HTML & CSS</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 70%;"></div></div>
+                            <span class="icon-placeholder"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>SQL</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 20%;"></div></div>
+                            <span class="icon-placeholder"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 20%;"></div></div>
+                            <span class="material-symbols-outlined learning" title="Em aprendizado">autorenew</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 10%;"></div></div>
+                            <span class="icon-placeholder"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>C#</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 5%;"></div></div>
+                            <span class="material-symbols-outlined learning" title="Em aprendizado">autorenew</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="skill">
-                    <p class="skill-name">React</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="react"></div>
+                <div class="skills-category">
+                    <h3>Frameworks</h3>
+                    <div class="skill-item">
+                        <span>Spring</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 10%;"></div></div>
+                            <span class="material-symbols-outlined learning" title="Em aprendizado">autorenew</span>
+                        </div>
                     </div>
-                    <span class="material-symbols-outlined">autorenew</span>
+                    <div class="skill-item">
+                        <span>React</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 2%;"></div></div>
+                            <span class="material-symbols-outlined learning" title="Em aprendizado">autorenew</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="ptools">
+                <div class="skills-category">
+                    <h3>Ferramentas</h3>
+                    <div class="skill-item">
+                        <span>Adobe Creative Cloud</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 50%;"></div></div>
+                            <span class="icon-placeholder"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Figma</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 35%;"></div></div>
+                            <span class="icon-placeholder"></span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Gradle</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 5%;"></div></div>
+                            <span class="material-symbols-outlined learning" title="Em aprendizado">autorenew</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Git & Github</span>
+                        <div class="progress-wrapper">
+                            <div class="progress"><div class="bar" style="width: 15%;"></div></div>
+                            <span class="material-symbols-outlined learning" title="Em aprendizado">autorenew</span>
+                        </div>
+                    </div>
+                </div>
                 
-                <h3>Ferramentas</h3>
-
-                <div class="skill">
-                    <p class="skill-name">Adobe Creative Cloud</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="acc"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <p class="skill-name">Figma</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="fig"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <p class="skill-name">Gradle</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="gradle"></div>
-                    </div>
-                    <span class="material-symbols-outlined">autorenew</span>
-                </div>
-
-                <div class="skill">
-                    <p class="skill-name">Git & Github</p>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="git"></div>
-                    </div>
-                    <span class="material-symbols-outlined">autorenew</span>
-                </div>
-              
             </div>
-            
         </section>
 
         <section class="card" id="soft-skills">
-            <span class="material-symbols-outlined">apps</span>
-            <h2>Soft skills</h2>
-
-            <div class="section-comp">
-                <span class="material-symbols-outlined">groups</span>
-                <h3>Comportamental</h3>
-                <ul>
-                    <li>Aprendizado autodidata</li>
-                    <li>Organização</li>
-                    <li>Resolução de problemas</li>
-                    <li>Trabalho em equipe</li>
-                    <li>Pensamento lógico</li>
-                    <li>Comunicação clara</li>
-                    <li>Proatividade</li>
-                    <li>Empatia</li>
-                </ul>
+            <div class="card-title">
+                <span class="material-symbols-outlined card-icon">apps</span>
+                <h2>Soft skills</h2>
             </div>
 
-            <div class="section-lang">
-                <span class="material-symbols-outlined">language</span>
-                <h3>Idiomas</h3>
-                <div class="lang-item">
-                    <span class="material-symbols-outlined">translate</span>
-                    <p class="lang-strong">Italiano</p>
-                    <p>Nativo</p>
-                </div>           
-                <div class="lang-item">
-                    <span class="material-symbols-outlined">translate</span>
-                    <p class="lang-strong">Português</p>
-                    <p>Nativo</p>
-                </div>       
-                <div class="lang-item">
-                    <span class="material-symbols-outlined">translate</span>
-                    <p class="lang-strong">Inglês</p>
-                    <p>Intermediário - B2</p>
-                </div> 
-                <div class="lang-item">
-                    <span class="material-symbols-outlined">translate</span>
-                    <p class="lang-strong">Espanhol</p>
-                    <p>Básico</p>
-                </div> 
-            </div>
+            <div class="info-container">
 
-            <div class="section-interchange">
-                <span class="material-symbols-outlined">assistant_navigation</span>
-                <h3>Vivência Internacional</h3>
-                <div class="lang-item">
-                    <span class="material-symbols-outlined">flight_takeoff</span>
-                    <p class="lang-strong">Residência</p>
-                    <p>Belluno, Veneto, Itália (2018 à 2020).</p>
+                <div class="info-section">
+                    <h3 class="info-section-title">
+                        <span class="material-symbols-outlined">groups</span>
+                        Comportamental
+                    </h3>
+                    <div class="tags-container">
+                        <span class="tag">Aprendizado autodidata</span>
+                        <span class="tag">Organização</span>
+                        <span class="tag">Resolução de Problemas</span>
+                        <span class="tag">Trabalho em Equipe</span>
+                        <span class="tag">Pensamento lógico</span>
+                        <span class="tag">Comunicação clara</span>
+                        <span class="tag">Proatividade</span>
+                        <span class="tag">Empatia</span>
+                    </div>
+                </div>
 
+                <div class="info-section">
+                    <h3 class="info-section-title">
+                        <span class="material-symbols-outlined">language</span>
+                        Idiomas
+                    </h3>
+                    <div class="info-item">
+                        <span class="material-symbols-outlined">translate</span>
+                        <div class="info-text">
+                            <strong>Italiano</strong>
+                            <span>Nativo</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="material-symbols-outlined">translate</span>
+                        <div class="info-text">
+                            <strong>Português</strong>
+                            <span>Nativo</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="material-symbols-outlined">translate</span>
+                        <div class="info-text">
+                            <strong>Inglês</strong>
+                            <span>Intermediário - B2</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="material-symbols-outlined">translate</span>
+                        <div class="info-text">
+                            <strong>Espanhol</strong>
+                            <span>Básico</span>
+                        </div>
+                    </div>
                 </div>
-            </div>    
 
-        </section>
+                <div class="info-section">
+                    <h3 class="info-section-title">
+                        <span class="material-symbols-outlined">flight_takeoff</span>
+                        Vivência Internacional
+                    </h3>
+                    <div class="info-item">
+                        <span class="material-symbols-outlined">pin_drop</span>
+                        <div class="info-text">
+                            <strong>Residência na Itália</strong>
+                            <span>Belluno, Veneto (2018 à 2020)</span>
+                        </div>
+                    </div>
+                </div>
 
-        <section class="card" id="creations">
-            <span class="material-symbols-outlined">app_registration</span>
-            <h2>Creations</h2>
-            <div class="creations-card">
-                <h3>Create: Santa Lucia</h3>
-                <div>
-                    <p>Em busca de consolidar meus conhecimentos de Java e adentrar no mundo do Gradle e do Minecraft, criei um add-on do famoso mod Create, chamado Create: Santa Lucia.</p>
-                    <p>O objetivo era simples: fazer um mod que atendesse ao mundo modificado de um servidor de Minecraft, tornasse receitas viáveis, fosse compatível com mecânicas do Create e, claro, fizesse adição de itens que viabilizassem a história da ilha de Santa Lucia (daí o nome para o mod).</p>
-                    <p>Foi um grande desafio que me inseriu ao trabalho em equipe na programação, além de, claro, pós-concluído, trazer grande satisfação - tanto para mim como desenvolvedor como à comunidade.</p>
-                </div>
-                <div class="p-button">
-                    <span class="material-symbols-outlined">deployed_code</span>
-                    <p class="test-button">Veja o repositório</p>
-                </div>
-            </div>
-            <div class="creations-card">
-                <h3>Portfolio</h3>
-                <div>
-                    <p>Para mostrar ao mundo do que sou capaz, meu segundo projeto foi este que você vê: meu portfolio.</p>
-                    <p>Além de demonstrar meus conhecimentos em HTML, CSS e um pouco de JavaScript (uma vez que o projeto foi feito usando essas linguagens "cruas"), demonstro também a imagem que quero passar para o mundo: atento aos conceitos da atualidade (liquid glass/glassmorphism/flat), eficiência (uma vez que apliquei de forma ágil o design responsivo com flexbox e grid para construir o projeto em uma semana), e, por fim, para construir minha identidade como desenvolvedor - mostrando que a paixão por sistemas bem pensados no back-end se reflete em um front-end igualmente cuidadoso e moderno.</p>
-                </div>
-            </div>
-
-            <div class="creations-card">
-                <h3>O que vem no horizonte?</h3>
-                <div>
-                    <p>Atualmente, venho aprofundando meus estudos mais em C#, SQL, JavaScript e nos frameworks Spring e React. Essa decisão abrange tanto meu interesse no desenvolvimento produtivo quanto meus interesses pessoais em desenvolver para jogos.</p>
-                    <p>Além do mod Create: Santa Lucia, penso em um novo projeto mais ambicioso, mas, meu horizonte é ainda mais amplo: estou estudando um pouco a comunidade online de outros jogos, como GTA V e Read Dead Redemption II, afim de entender as possibilidades de desenvolvimento dentro dessas plataformas.</p>
-                    <p>Meu objetivo final é claro: evoluir como desenvolvedor até o ponto de transformar qualquer ideia, por mais complexa que seja, em algo funcional, real, eficiente e de imensa qualidade.</p>
-                </div>
             </div>
         </section>
-
-
-        <footer>
-            <span class="material-symbols-outlined">mail</span>
-            <h2>Contact me</h2>
-            <div>
-                <p>Busco um ambiente onde eu possa aplicar minha paixão por criar soluções eficientes e de alta qualidade. Se o seu time valoriza a inovação e o desenvolvimento cuidadoso, acredito que temos muito a construir juntos!</p>
+        
+        <section class="project-card" id="creations">
+            <div class="card-title">
+                <span class="material-symbols-outlined card-icon">app_registration</span>
+                <h2>Creations</h2>
             </div>
+
+            <div class="creations-container">
+
+                <div class="creation-item">
+                    <h3>Create: Santa Lucia</h3>
+                    <div class="creation-text">
+                        <p>Em busca de consolidar meus conhecimentos de Java e adentrar no mundo do Gradle e do Minecraft, criei um add-on do famoso mod Create, chamado Create: Santa Lucia.</p>
+                        <p>O objetivo era simples: fazer um mod que atendesse ao mundo modificado de um servidor de Minecraft, tornasse receitas viáveis, fosse compatível com mecânicas do Create e, claro, fizesse adição de itens que viabilizassem a história da ilha de Santa Lucia (daí o nome para o mod).</p>
+                        <p>Foi um grande desafio que me inseriu ao trabalho em equipe na programação, além de, claro, pós-concluído, trazer grande satisfação - tanto para mim como desenvolvedor como à comunidade.</p>
+                    </div>
+                    <div class="creation-button">
+                        <span class="material-symbols-outlined">deployed_code</span>
+                        <a href="#">Veja o repositório</a>
+                    </div>
+                </div>
+
+                <div class="creation-item">
+                    <h3>Portfolio</h3>
+                    <div class="creation-text">
+                        <p>Para mostrar ao mundo do que sou capaz, meu segundo projeto foi este que você vê: meu portfolio.</p>
+                        <p>Além de demonstrar meus conhecimentos em HTML, CSS e um pouco de JavaScript (uma vez que o projeto foi feito usando essas linguagens "cruas"), demonstro também a imagem que quero passar para o mundo: atento aos conceitos da atualidade (liquid glass/glassmorphism/flat), eficiência (uma vez que apliquei de forma ágil o design responsivo com flexbox e grid para construir o projeto em uma semana), e, por fim, para construir minha identidade como desenvolvedor - mostrando que a paixão por sistemas bem pensados no back-end se reflete em um front-end igualmente cuidadoso e moderno.</p>
+                    </div>
+                    <div class="creation-button">
+                        <span class="material-symbols-outlined">deployed_code</span>
+                        <a href="#">Veja o repositório</a>
+                    </div>
+                        
+                    
+                </div>
+
+                <div class="creation-item">
+                    <h3>O que vem no horizonte?</h3>
+                    <div class="creation-text">
+                        <p>Atualmente, venho aprofundando meus estudos mais em C#, SQL, JavaScript e nos frameworks Spring e React. Essa decisão abrange tanto meu interesse no desenvolvimento produtivo quanto meus interesses pessoais em desenvolver para jogos.</p>
+                        <p>Além do mod Create: Santa Lucia, penso em um novo projeto mais ambicioso, mas, meu horizonte é ainda mais amplo: estou estudando um pouco a comunidade online de outros jogos, como GTA V e Read Dead Redemption II, afim de entender as possibilidades de desenvolvimento dentro dessas plataformas.</p>
+                        <p>Meu objetivo final é claro: evoluir como desenvolvedor até o ponto de transformar qualquer ideia, por mais complexa que seja, em algo funcional, real, eficiente e de imensa qualidade.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+            <footer>
+                <div class="footer-title">
+                    <span class="material-symbols-outlined card-icon">mail</span>
+                    <h2>Contact me</h2>
+                </div>
+                <div>
+                    <p>Busco um ambiente onde eu possa aplicar minha paixão por criar soluções eficientes e de alta qualidade. Se o seu time valoriza a inovação e o desenvolvimento cuidadoso, acredito que temos muito a construir juntos!</p>
+                </div>
         </footer>
-
-      
 
 
     </main>
