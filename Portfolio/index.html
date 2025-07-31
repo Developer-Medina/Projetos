@@ -22,44 +22,60 @@
 
     <header>
 
-        <nav>
-            <span class="material-symbols-outlined menu-icon">all_inclusive</span>
-            <a href="#" class="menu-item">Home</a>
-            <a href="#" class="menu-item">About me</a>
-            <a href="#" class="menu-item">Skills</a>
-            <a href="#" class="menu-item">Creations</a>
-            <a href="#" class="menu-item">Contact me</a>
-            <span class="material-symbols-outlined menu-icon">menu</span>
+        <nav class="top-nav">
+            <span class="menu-icon" id="i-logo">∞</span>
+            <div class="divider-logo"></div>
+            <button class="hamburger-btn" id="menu-toggle" aria-label="Abrir/fechar menu">
+                <div class="hamburger-icon-wrapper">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </div>
+            </button>
         </nav>
 
     </header>
 
+    <nav class="nav-overlay">
+        <ul>
+            <li><a href="#"><span class="material-symbols-outlined">home</span>Home</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">person</span>About me</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">star</span>Skills</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">auto_awesome</span>Creations</a></li>
+            <li><a href="#"><span class="material-symbols-outlined">mail</span>Contact me</a></li>
+        </ul>
+    </nav>
+
     <main>
 
-        <h1>Portfolio - Medina</h1>
+        <h1 class="title">Portfolio - Medina</h1>
 
-        <section class="card">
-            <span class="material-symbols-outlined">home</span>
-            <h2>Home</h2>
-            <img src="_assets/profile_pic.png" alt="Imagem de um jovem sob fundo de natureza">  
-            <h3>Prazer, sou o Medina!</h3>   
-            <p>Desenvolvedor com visão de produto, atenção ao detalhe e paixão por sistemas bem pensados.</p>
-            <p class="p-button">Full Stack em formação - Mackenzie</p>
-
-        </section>
-
-        <section class="card">
-            <span class="material-symbols-outlined">account_circle</span>
-            <h2>About me</h2>
-            <p>Ser um desenvolvedor é mais do que saber programar - é saber onde procurar, como transformar dúvidas ou ideias em soluções e como adaptar cada código ao meu próprio estilo.</p>
-            <img src="_assets/vyse_pic.png" alt="Vyse, agente do jogo Valorant.">
-            <blockquote>"Todo o arsenal é meu."</blockquote>
-            <p>— Vyse, Valorant.</p>
-            <p>E de fato, é: meu único limite sou eu mesmo e, ao reconhecer isso, me mantenho preparado para o próximo desafio.</p>
-            <p>Sou apaixonado por aprender, experimentar coisas novas e estar à frente do que ainda está surgindo - mas não se engane porque, por trás dessa personalidade que anseia por novidade, há também o prazer por lugares e pessoas que me são familiares e, claro, simples prazeres do dia a dia (como ouvir música!).</p>
-            <p class="p-button">Conheça meu arsenal</p>
-            <span class="material-symbols-outlined">keyboard_arrow_down</span>
-        </section>
+        <div class="main-grid">
+            <section class="card" id="home">
+                    <div class="card-title">
+                        <span class="material-symbols-outlined">home</span>
+                        <h2>Home</h2>
+                    </div>
+                    <div class="main-pic">
+                        <img src="_assets/profile_pic.png" alt="Imagem de um jovem sob fundo de natureza">
+                    </div>
+                    <h3>Prazer, sou o Medina!</h3>
+                    <p>Desenvolvedor com visão de produto, atenção ao detalhe e paixão por sistemas bem pensados.</p>
+                    <p class="p-button">Full Stack em formação - Mackenzie</p>
+            </section>
+            <section class="card">
+                <span class="material-symbols-outlined">account_circle</span>
+                <h2>About me</h2>
+                <p>Ser um desenvolvedor é mais do que saber programar - é saber onde procurar, como transformar dúvidas ou ideias em soluções e como adaptar cada código ao meu próprio estilo.</p>
+                <img src="_assets/vyse_pic.png" alt="Vyse, agente do jogo Valorant.">
+                <blockquote>"Todo o arsenal é meu."</blockquote>
+                <p>— Vyse, Valorant.</p>
+                <p>E de fato, é: meu único limite sou eu mesmo e, ao reconhecer isso, me mantenho preparado para o próximo desafio.</p>
+                <p>Sou apaixonado por aprender, experimentar coisas novas e estar à frente do que ainda está surgindo - mas não se engane porque, por trás dessa personalidade que anseia por novidade, há também o prazer por lugares e pessoas que me são familiares e, claro, simples prazeres do dia a dia (como ouvir música!).</p>
+                <p class="p-button">Conheça meu arsenal</p>
+                <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </section>
+        </div>
 
         <section class="card" id="hard-skills">
             <span class="material-symbols-outlined">code</span>
@@ -272,6 +288,8 @@
 
 
     </main>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
