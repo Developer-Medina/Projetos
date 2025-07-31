@@ -38,16 +38,6 @@
   --main-bg-hover: rgba(255, 255, 255, 0.15);
 
 
-  /* === Header e Nav ===*/
-
-
-
-  /* === FX ===*/
-
-
-
-  /* === TRANSITIONS ===*/
-
 
 }
 
@@ -396,13 +386,17 @@ main {
 }
 
 .main-container {
-  display: grid;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   max-width: 95%;
-  justify-items: center;
-  grid-template-columns: 1fr;
   gap: 3rem;
-
   margin: auto;
+}
+
+#card-1 {
+  flex: 1 1 auto;
 }
 
 .card-grid {
@@ -422,8 +416,15 @@ main {
 }
 
 #card-1 {
-  grid-area: 1 1 2 2;
-  max-width: 600px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 100%;
+}
+
+#card-2 {
+  flex: 2;
+  min-width: 280px;
+  max-width: 100%;
 }
 
 .card-title {
@@ -495,10 +496,6 @@ p {
 .p-button:hover {
   background: var(--main-bg-hover);
   box-shadow: var(--white-box-shadow);
-}
-
-#card-2 {
-  grid-area: 2 1 3 2;
 }
 
 .sec-p {
@@ -716,55 +713,91 @@ blockquote {
 
 /*=== Creations ===*/
 
-.project-card {
+
+.creations-section {
+  width: 95%;
+  margin: 4rem auto;    
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 4rem 0rem;
+}
+
+
+.creations-section .card-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  max-width: 200px;
 
 }
+
 
 .creations-container {
   display: grid;
-  width: 95%;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-
+  width: 100%;
   margin: auto;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; 
+
 }
+
 
 .creation-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding: 0.75rem 2rem;
+  text-align: center;
+
+  height: 100%; 
+  padding: 2rem;
   border-radius: 2rem;
-  margin-bottom: 0.75rem;
-  border: var(--main-card-bg);
-  transition: background-color 0.3s ease;
-
-  color: var(--offwhite);
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.192);
+  border: var(--main-border);
+  background-color: var(--main-card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--main-box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.creation-item > h3 {
+.creation-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--white-box-shadow);
+}
+
+.creation-item h3 {
   font-size: 1.5rem;
-  padding: 0.5rem 1rem;
   font-family: var(--font-1);
-  margin: 1rem auto;
+  color: var(--pure-white);
+  margin-bottom: 2rem;
 }
+
+
+.creation-text p {
+  text-indent: 0; 
+  text-align: justify;
+}
+
 
 .creation-button {
-  display: flex;
-  flex: row;
+  display: inline-flex;
   align-items: center;
-  background-color: #2a84c0;
-  border-radius: 2rem;
-  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  align-self: center; 
+  margin-top: 2rem; 
+
   font-family: var(--font-1);
-  margin: 1rem auto 2rem auto;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  transition: background-color 0.3s ease;
 }
 
-.creation-button > span {
-  margin-right: 0.5rem;
+.creation-button:hover {
+  background-color: #40a5e9;
 }
 
 
@@ -801,3 +834,73 @@ footer {
   text-align: center;
 
 }
+
+@media screen and (min-width: 800px) {
+
+  .main-container {
+    flex-flow: column nowrap;
+
+  }
+
+  #card-1 {
+    width: 100%;
+    flex: auto;
+  }
+
+  .creations-container {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+
+
+}
+
+@media screen and (min-width: 1100px) {
+
+  .main-container {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  #card-1 {
+    flex: 1 1 40%;
+  }
+
+
+  #card-2 {
+    flex: 1 1 60%
+  }
+
+  .creations-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+}
+ 
+@media screen and (min-width: 1300px) {
+  
+  .main-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 95%;
+    gap: 2rem;
+    margin: auto;
+  }
+
+  #card-1 {
+    flex: 1 1 40%;
+  }
+
+
+  #card-2 {
+    flex: 1 1 60%
+  }
+
+  .creations-container {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+
+}
+
