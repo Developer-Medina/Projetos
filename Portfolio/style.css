@@ -421,7 +421,7 @@ main {
   max-width: 100%;
 }
 
-#card-2 {
+#aboutme {
   flex: 2;
   min-width: 280px;
   max-width: 100%;
@@ -867,7 +867,7 @@ footer {
   }
 
 
-  #card-2 {
+  #aboutme {
     flex: 1 1 60%
   }
 
@@ -894,7 +894,7 @@ footer {
   }
 
 
-  #card-2 {
+  #aboutme {
     flex: 1 1 60%
   }
 
