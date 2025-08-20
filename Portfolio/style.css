@@ -449,6 +449,10 @@ main {
   transform: translateY(3px);
 }
 
+#main-sub {
+  text-align: center;
+}
+
 #img-1 {
   border-radius: 50%;
   box-shadow: var(--main-box-shadow);
@@ -481,6 +485,7 @@ p {
   font-family: var(--font-1);
   font-weight: 600;
   color: var(--pure-white);
+  text-align: center;
 
   padding: 1rem 1.5rem;
   border-radius: 2rem;
