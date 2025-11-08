@@ -1,0 +1,12 @@
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb_mackenzie
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: Samira@#R500
+      MYSQL_DATABASE: mackenzie
+      MYSQL_USER: mackenzie
+      MYSQL_PASSWORD: Samira@#R500
+    ports:
+      - "3310:3306"
